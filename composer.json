@@ -1,7 +1,7 @@
 {
     "name": "masfahri/nutech",
     "description": "Nutect Test Web Promgramming",
-    "type": "project",
+    "type": "library",
     "license": "MIT",
     "autoload": {
         "psr-4": {
