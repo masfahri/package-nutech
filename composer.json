@@ -1,0 +1,27 @@
+{
+    "name": "masfahri/nutech",
+    "description": "Nutect Test Web Promgramming",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Masfahri\\Nutech\\": "src/"
+        }
+    },
+    "version": "1.1",
+    "authors": [
+        {
+            "name": "Muhammad Fahrizal",
+            "email": "saya.masfahri@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Masfahri\\Nutech\\NutechServiceProvider"
+            ]
+        }
+    }
+}
