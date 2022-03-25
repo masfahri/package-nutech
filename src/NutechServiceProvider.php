@@ -14,7 +14,7 @@ class NutechServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->mergeConfigFrom(__DIR__.'/config/main.php', 'core');
+        $this->mergeConfigFrom(__DIR__.'/Config/config.php', 'config');
     }
 
     /**
@@ -29,10 +29,10 @@ class NutechServiceProvider extends ServiceProvider
         $this->loadMigrationsFrom(__DIR__.'/migrations');
         $this->publishes([
             __DIR__.'\Public\assets' => public_path('vendor/masfahri/nutech/assets')
-        ]);
-        // $this->publishes([
-        //     __DIR__.'/public/uploads/files' => public_path('uploads/files', 'uploads')
-        // ]);
+        ], 'public');
+        $this->publishes([
+            __DIR__.'/config/config.php' => config_path('config.php'),
+          ], 'config');
         $this->commands([
             NutechInstall::class
         ]);

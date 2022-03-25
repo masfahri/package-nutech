@@ -39,7 +39,7 @@ class NutechInstall extends Command
     {
         $this->info('****** Menginstall Test Web Programming ******');
         $this->call('vendor:publish', [
-            '--provider' => 'masfahri\nutech\src\NutechServiceProvider',
+            '--provider' => 'Masfahri\Nutech\NutechServiceProvider',
             '--force' => 'yes'
         ]);
     }
